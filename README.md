@@ -1,7 +1,7 @@
 # TPBoids
  
 Explication technique du système de Boids dans Unreal Engine
-Classe ABoid (Étapes 1-4)
+Classe ABoid
 Fonctionnement général
 Chaque boid est un acteur individuel qui maintient sa propre position et vélocité. Il évalue constamment son environnement pour ajuster sa trajectoire selon les trois règles fondamentales (séparation, alignement, cohésion) et l'évitement d'obstacles.
 Principales fonctions
