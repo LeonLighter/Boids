@@ -23,7 +23,7 @@ Vélocité : Direction et vitesse actuelles
 Paramètres de comportement : MaxSpeed, MaxForce, poids des différentes forces
 Paramètres de perception : Rayon de voisinage, angle de vision
 
-Classe ABoidManager (Étapes 1-4)
+Classe ABoidManager
 Fonctionnement général
 Le gestionnaire crée et supervise tous les boids. Il implémente des optimisations comme la partition spatiale pour réduire la complexité des calculs quand de nombreux boids sont présents.
 Principales fonctions
@@ -56,7 +56,7 @@ Le boid met à jour sa position et sa rotation selon sa nouvelle vélocité
 
 
 
-Optimisation spatiale (Étape 4)
+Optimisation spatiale
 La partition spatiale divise l'espace en cellules. Plutôt que de comparer chaque boid avec tous les autres (complexité O(n²)), chaque boid examine uniquement ceux situés dans les cellules adjacentes. Ceci réduit considérablement la complexité de calcul, surtout quand le nombre de boids est élevé.
 La taille des cellules de la grille est un paramètre crucial : trop petites, elles n'incluront pas assez de voisins pertinents ; trop grandes, elles perdent leur avantage d'optimisation. Idéalement, la taille de cellule devrait être légèrement supérieure au rayon de perception des boids.
 Cette architecture fournit un système de boids performant et réaliste, où des comportements complexes émergent de règles simples appliquées localement.
