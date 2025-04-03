@@ -43,7 +43,7 @@ Configuration du système : Nombre de boids, volume d'apparition
 Optimisation : Taille des cellules de la grille, activation de la partition spatiale
 Références : Liste de tous les boids, grille spatiale
 
-Flux de traitement à chaque frame
+Traitement à chaque frame
 
 Le BoidManager met à jour sa grille spatiale en répartissant tous les boids dans leurs cellules respectives
 Pour chaque boid:
