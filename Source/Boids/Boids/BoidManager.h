@@ -16,7 +16,7 @@ struct FBoidGrid
 };
 
 UCLASS()
-class YOUR_PROJECT_API ABoidManager : public AActor
+class BOIDS_API ABoidManager : public AActor
 {
 	GENERATED_BODY()
     

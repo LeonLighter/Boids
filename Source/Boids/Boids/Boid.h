@@ -6,7 +6,7 @@
 #include "Boid.generated.h"
 
 UCLASS()
-class YOUR_PROJECT_API ABoid : public AActor
+class BOIDS_API ABoid : public AActor
 {
 	GENERATED_BODY()
     

@@ -159,8 +159,8 @@ FVector ABoid::Cohesion(TArray<ABoid*>& NearbyBoids)
 FVector ABoid::ObstacleAvoidance()
 {
     // Nombre de points de raycast sur la sphère
-    const int NumRaycastPoints = 8;
-    const float RaycastDistance = 200.0f;
+    const int NumRaycastPoints = 20;
+    const float RaycastDistance = 300.0f;
     
     FVector SteeringForce = FVector::ZeroVector;
     int HitCount = 0;
@@ -202,12 +202,12 @@ FVector ABoid::ObstacleAvoidance()
             HitCount++;
             
             // Debug - afficher les rayons qui ont touché des obstacles
-            DrawDebugLine(GetWorld(), GetActorLocation(), HitResult.Location, FColor::Red, false, 0.0f, 0, 1.0f);
+            ///DrawDebugLine(GetWorld(), GetActorLocation(), HitResult.Location, FColor::Red, false, 0.0f, 0, 1.0f);
         }
         else
         {
             // Debug - afficher les rayons qui n'ont pas touché d'obstacles
-            DrawDebugLine(GetWorld(), GetActorLocation(), GetActorLocation() + RayDirection * RaycastDistance, FColor::Green, false, 0.0f, 0, 1.0f);
+            //DrawDebugLine(GetWorld(), GetActorLocation(), GetActorLocation() + RayDirection * RaycastDistance, FColor::Green, false, 0.0f, 0, 1.0f);
         }
     }
     
